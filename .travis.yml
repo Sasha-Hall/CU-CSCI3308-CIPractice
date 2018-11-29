@@ -2,6 +2,6 @@ language: c
 script: make test
 install: make dep
 addons:
-	homebrew:
-		packages:
-		- check
+homebrew:
+packages:
+- check
