@@ -172,6 +172,38 @@ Suite* coord_2d_suite(void)
 
 }
 
+START_TEST(test_2d_area_triangle)
+{
+	coord_2d_t a;
+    coord_2d_t b;
+    coord_2d_t c;
+
+    a.x = 3;
+    a.y = 3;
+    b.x = 7;
+    b.y = 11;
+    c.x = 21;
+    c.y = 5;
+
+    double actArea = coord_2d_area_triangle(&a, &b, &c);
+    double expArea = 58;
+
+    ck_assert(actArea == expArea);
+
+    a.x = 3;
+    a.y = 3;
+    b.x = 7;
+    b.y = 11;
+    c.x = 21;
+    c.y = 5;
+
+    double actArea = coord_2d_area_triangle(&a, &b, &c);
+    double expArea = 20;
+
+    ck_assert(actArea != expArea);
+
+}
+
 /* main: run test suites and set exit status */
 int main(void){
 
