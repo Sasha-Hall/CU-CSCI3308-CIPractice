@@ -1,0 +1,7 @@
+Sasha Hall
+11/29/18
+Lab 12
+
+2. At first it said that there was no check.h file, but once I installed the check package through HomeBrew, it ran with no problem.
+
+3. All of the tests ran without failures.
