@@ -27,6 +27,7 @@ geometry.o: geometry.c geometry.h
 
 dep:
 	sudo apt-get install check
+	sudo apt-get update
 
 clean:
 	$(RM) *.o
